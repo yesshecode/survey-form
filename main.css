@@ -8,10 +8,22 @@ body {
     justify-self: center;
 }
 
+#title {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    margin: 20px 0 20px 0;
+}
+
+#description {
+    font-family: 'roboto', sans-serif;
+    font-size: 1em;
+    margin: 0 0 20px 0;
+}
+
 
 #container {
-    border: 2px solid #ebebeb;
     border-radius: 15px;
+    background-color: #f4f6f5;
     grid-column: 2 / 4;
     height: auto;
     margin-left: auto;
@@ -26,5 +38,32 @@ label, textarea {
 
 form {
     margin: 10% 100px 10% 100px;
+    font-family: 'roboto', sand-serif;
+    font-weight: 300;
+    font-size: 1em;
 }
 
+#name {
+    width: 20vw;
+}
+
+#number {
+    width: 3vw;
+}
+
+#comments {
+    width: 25vw;
+    height: auto;
+    border-color: #ebebeb;
+    border-style: ridge;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+        #container {
+            grid-column: 1 / -1;
+            justify-self: center;
+        } 
+  }
